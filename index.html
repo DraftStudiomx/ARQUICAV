@@ -204,6 +204,15 @@
   .js .reveal{opacity:0}
   .js h1 .ln > span{transform:translateY(110%)}
 
+  @media (max-width:400px){
+    .brand{gap:8px}
+    .brand-mark{width:36px}
+    .wordmark{font-size:16px;letter-spacing:.08em}
+    .nav-right{gap:8px}
+    .lang button{padding:8px 4px}
+    .btn-sm{padding:11px 12px}
+  }
+
   /* ---------- Tablet ---------- */
   @media (min-width:640px){
     :root{--gutter:32px}
@@ -318,7 +327,7 @@
         </a>
       </div>
 
-      <dl class="stats">
+      <dl class="stats reveal">
         <div class="stat reveal">
           <dt class="lbl">Años de experiencia</dt>
           <dd class="num" style="order:-1"><span data-count="16">16</span><sup>+</sup></dd>
@@ -481,7 +490,7 @@
         .to('.eyebrow', {opacity:1, y:0, duration:.8, ease:'power3.out'}, 2.0)
         .to('h1 .ln > span', {y:0, duration:1.1, stagger:.09, ease:'expo.out'}, 2.05)
         .to('.lede, .ctas', {opacity:1, y:0, duration:.9, stagger:.1, ease:'power3.out'}, 2.45)
-        .to('.stat', {opacity:1, y:0, duration:.8, stagger:.08, ease:'power3.out', onStart:counters}, 2.65)
+        .to('.stats, .stat', {opacity:1, y:0, duration:.8, stagger:.08, ease:'power3.out', onStart:counters}, 2.65)
         .to('.ticker, .wa', {opacity:1, y:0, duration:.8, stagger:.1, ease:'power2.out'}, 2.85);
     };
 
